@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/medio"
+    tools:context=".FolhaProdutoActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Artesanato"
+        android:layout_marginTop="@dimen/grande"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/artesanato"
+        android:textAppearance="@style/h1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categoria"
+        android:textAppearance="@style/h3"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/artesanato"
+        android:id="@+id/categoria"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sobre o artesanato"
+        android:layout_marginTop="@dimen/medio"
+        app:layout_constraintTop_toBottomOf="@+id/categoria"
+        android:id="@+id/titulo_descricao"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/descricao"
+        android:text="descricao do produto entra aqui"
+        app:layout_constraintTop_toBottomOf="@id/titulo_descricao"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/autor"
+        android:text="Autor"
+        app:layout_constraintTop_toBottomOf="@id/descricao"
+        android:layout_marginTop="@dimen/medio"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:text="Price"
+        app:layout_constraintTop_toBottomOf="@id/autor"
+        android:layout_marginTop="@dimen/medio"/>
+
+</android.support.constraint.ConstraintLayout>

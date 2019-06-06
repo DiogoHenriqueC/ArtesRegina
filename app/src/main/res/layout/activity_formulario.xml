@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do produto"
+            android:textSize="@dimen/medio"
+            android:textAppearance="@style/h1"
+            android:layout_marginTop="@dimen/medio"
+            android:layout_marginLeft="@dimen/medio"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do Artesanato"
+            android:id="@+id/formulario_nome"
+            android:layout_marginLeft="@dimen/medio"
+            android:layout_marginRight="@dimen/medio"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descricao"
+            android:textSize="@dimen/medio"
+            android:textAppearance="@style/h1"
+            android:layout_marginTop="@dimen/medio"
+            android:layout_marginLeft="@dimen/medio"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insira a descriçao"
+            android:id="@+id/formulario_descricao"
+            android:layout_marginLeft="@dimen/medio"
+            android:layout_marginRight="@dimen/medio"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categoria"
+            android:textSize="@dimen/medio"
+            android:textAppearance="@style/h1"
+            android:layout_marginTop="@dimen/medio"
+            android:layout_marginLeft="@dimen/medio"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Categoria"
+            android:id="@+id/formulario_categoria"
+            android:layout_marginLeft="@dimen/medio"
+            android:layout_marginRight="@dimen/medio"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quem produziu"
+            android:textSize="@dimen/medio"
+            android:textAppearance="@style/h1"
+            android:layout_marginTop="@dimen/medio"
+            android:layout_marginLeft="@dimen/medio"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Produzido por"
+            android:id="@+id/formulario_autor"
+            android:layout_marginLeft="@dimen/medio"
+            android:layout_marginRight="@dimen/medio"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Qual o valor"
+            android:textSize="@dimen/medio"
+            android:textAppearance="@style/h1"
+            android:layout_marginTop="@dimen/medio"
+            android:layout_marginLeft="@dimen/medio"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preço para venda"
+            android:id="@+id/formulario_price"
+            android:layout_marginLeft="@dimen/medio"
+            android:layout_marginRight="@dimen/medio"/>
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="@dimen/medio"
+            android:background="@drawable/rectangle_destaque"
+            android:layout_marginLeft="@dimen/medio"
+            android:id="@+id/imageProduto"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addImage"
+            android:text="Adicionar Imagem"
+            android:layout_marginLeft="@dimen/medio"
+            android:layout_marginRight="@dimen/medio"
+            android:layout_marginTop="@dimen/medio"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+
+    </LinearLayout>
+
+</ScrollView>

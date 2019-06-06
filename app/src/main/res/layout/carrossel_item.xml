@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/medio"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/quadrado_pequeno"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/rectangle_destaque"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/artesanato_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome do artesanato"
+        android:textAppearance="@style/h3"
+        android:layout_marginTop="@dimen/medio"
+        app:layout_constraintTop_toBottomOf="@id/quadrado_pequeno"
+        app:layout_constraintStart_toStartOf="@id/titulo"
+        />
+
+    <!-- Autor -->
+    <TextView
+        android:id="@+id/autor_menor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Autor"
+        android:textStyle="bold"
+        android:textAppearance="@style/h3"
+        android:gravity="top"
+        app:layout_constraintTop_toBottomOf="@id/artesanato_item"
+        app:layout_constraintStart_toStartOf="@id/titulo"
+        />
+
+</android.support.constraint.ConstraintLayout>

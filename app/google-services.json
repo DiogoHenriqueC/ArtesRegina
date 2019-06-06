@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "336383074767",
+    "firebase_url": "https://artes-regina.firebaseio.com",
+    "project_id": "artes-regina",
+    "storage_bucket": "artes-regina.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336383074767:android:4f5873066ee8649c",
+        "android_client_info": {
+          "package_name": "br.com.dhc.artesregina"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336383074767-oqoc2j14n142gpt4gkgnmelpqmikajf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB460gKoHBzZdxbBI-Xp1H3Ng1ypz3jxw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336383074767-oqoc2j14n142gpt4gkgnmelpqmikajf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

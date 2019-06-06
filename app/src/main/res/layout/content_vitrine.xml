@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.dhc.artesregina.VitrineActivity"
+    tools:showIn="@layout/activity_vitrine"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycle_destaque"
+            tools:listitem="@layout/carrossel_destaque_item"
+            />
+
+        <!-- Line -->
+        <View
+            android:id="@+id/line"
+            android:layout_width="420dp"
+            android:layout_height="1dp"
+            android:background="@drawable/line"
+            android:layout_marginTop="@dimen/medio"
+            />
+
+        <TextView
+            android:id="@+id/dispon_vel_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categoria 1"
+            android:textAppearance="@style/h3"
+            android:gravity="top"
+            android:layout_marginLeft="@dimen/medio"
+            android:layout_marginTop="@dimen/medio"
+            android:textStyle="bold"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/carrossel_menor"
+            tools:listitem="@layout/carrossel_item"
+            />
+
+        <!-- Line -->
+        <View
+            android:id="@+id/line2"
+            android:layout_width="420dp"
+            android:layout_height="1dp"
+            android:background="@drawable/line"
+            android:layout_marginTop="@dimen/medio"
+            />
+
+    </LinearLayout>
+</ScrollView>

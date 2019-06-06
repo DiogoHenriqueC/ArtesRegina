@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/h1"
+        android:textAppearance="@style/h1"
+        android:layout_marginTop="@dimen/grande"
+        android:paddingBottom="@dimen/medio"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        app:layout_constraintStart_toStartOf="@id/titulo"
+        android:background="@drawable/rectangle_destaque"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+
+        />
+
+    <!-- Disponível para encomenda Entrega em 20 dias Autor -->
+    <TextView
+        android:id="@+id/disponibilidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disponível para encomenda\nEntrega em 20 dias"
+        android:textAppearance="@style/h3"
+        android:gravity="top"
+        android:layout_marginTop="@dimen/medio"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintStart_toStartOf="@id/titulo"
+        />
+
+    <!-- Autor -->
+    <TextView
+        android:id="@+id/autor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Autor"
+        android:textStyle="bold"
+        android:textAppearance="@style/h3"
+        android:gravity="top"
+        app:layout_constraintTop_toBottomOf="@id/disponibilidade"
+        app:layout_constraintStart_toStartOf="@id/titulo"
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

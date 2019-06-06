@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.dhc.artesregina.br.com.dhc.artesRegina.VitrineActivity">
+    <item
+        android:id="@+id/meus_produtos"
+        android:orderInCategory="100"
+        android:title="@string/meus_produtos"
+        app:showAsAction="never" />
+</menu>
