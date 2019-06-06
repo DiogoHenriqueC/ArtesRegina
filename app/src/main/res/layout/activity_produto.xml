@@ -10,6 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/containersss"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
@@ -86,6 +89,8 @@
         android:layout_marginRight="@dimen/medio"
         android:background="@drawable/rectangle_destaque"
         android:layout_marginTop="@dimen/medio"
-        app:layout_constraintTop_toBottomOf="@id/price" />
+        app:layout_constraintTop_toBottomOf="@id/price"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="@dimen/medio"/>
 
 </android.support.constraint.ConstraintLayout>

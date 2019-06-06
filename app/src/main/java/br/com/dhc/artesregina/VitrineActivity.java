@@ -119,7 +119,7 @@ public class VitrineActivity extends AppCompatActivity {
                 Produto produto = (Produto) view.getTag();
 
                 Intent intentVaiProProduto = new Intent(VitrineActivity.this, FolhaProdutoActivity.class);
-                intentVaiProProduto.putExtra("produto", produto);
+                intentVaiProProduto.putExtra("produto", produto.getId());
                 startActivity(intentVaiProProduto);
 
                 Toast.makeText(VitrineActivity.this, produto.getNome(), Toast.LENGTH_SHORT).show();
@@ -143,7 +143,7 @@ public class VitrineActivity extends AppCompatActivity {
                 Produto prod = (Produto) view.getTag();
 
                 Intent intentVaiProProduto = new Intent(VitrineActivity.this, FolhaProdutoActivity.class);
-                intentVaiProProduto.putExtra("produto", prod);
+                intentVaiProProduto.putExtra("produto", prod.getId());
                 startActivity(intentVaiProProduto);
 
                 Toast.makeText(VitrineActivity.this, prod.getNome(), Toast.LENGTH_SHORT).show();

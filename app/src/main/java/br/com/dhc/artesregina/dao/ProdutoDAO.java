@@ -69,7 +69,6 @@ public class ProdutoDAO extends SQLiteOpenHelper {
 
         // Enquanto tiver proxima linha.. executa
         while (c.moveToNext()){
-
             Produto produto = new Produto();
             produto.setId(c.getLong(c.getColumnIndex("id")));
             produto.setNome(c.getString(c.getColumnIndex("nome")));
@@ -78,14 +77,41 @@ public class ProdutoDAO extends SQLiteOpenHelper {
             produto.setAutor(c.getString(c.getColumnIndex("autor")));
             produto.setPrice(c.getString(c.getColumnIndex("price")));
             produto.setImagem(c.getBlob(c.getColumnIndex("imagem")));
-
             produtos.add(produto);
-
         }
-
         c.close();
         return produtos;
+    }
 
+    public Produto buscaProduto(Long id) {
+
+        String sql = "SELECT * FROM Produtos WHERE id = " + id;
+        SQLiteDatabase db = getReadableDatabase();
+
+        // Parametro pra busca - Retorna cursor
+        Cursor c = db.rawQuery(sql, null);
+
+        // Lista de produtos
+        List<Produto> produtos = new ArrayList<Produto>();
+
+        // Enquanto tiver proxima linha.. executa
+        while (c.moveToNext()){
+            Produto produto = new Produto();
+            produto.setId(c.getLong(c.getColumnIndex("id")));
+            produto.setNome(c.getString(c.getColumnIndex("nome")));
+            produto.setDescricao(c.getString(c.getColumnIndex("descricao")));
+            produto.setCategoria(c.getString(c.getColumnIndex("categoria")));
+            produto.setAutor(c.getString(c.getColumnIndex("autor")));
+            produto.setPrice(c.getString(c.getColumnIndex("price")));
+            produto.setImagem(c.getBlob(c.getColumnIndex("imagem")));
+            produtos.add(produto);
+        }
+        c.close();
+        if (produtos.size() > 0) {
+            return produtos.get(0);
+        } else {
+            return null;
+        }
     }
 
     public void altera(Produto produto) {
