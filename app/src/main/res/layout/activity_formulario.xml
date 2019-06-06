@@ -11,7 +11,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nome do produto"
+            android:text="Nome do artesanato"
             android:textSize="@dimen/medio"
             android:textAppearance="@style/h1"
             android:layout_marginTop="@dimen/medio"
@@ -20,7 +20,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome do Artesanato"
+            android:hint="Digite o nome do artesanato"
             android:id="@+id/formulario_nome"
             android:layout_marginLeft="@dimen/medio"
             android:layout_marginRight="@dimen/medio"/>
@@ -37,7 +37,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Insira a descriçao"
+            android:hint="Digite a descricao do artesanato"
             android:id="@+id/formulario_descricao"
             android:layout_marginLeft="@dimen/medio"
             android:layout_marginRight="@dimen/medio"/>
@@ -45,7 +45,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Categoria"
+            android:text="Categoria do artesanato"
             android:textSize="@dimen/medio"
             android:textAppearance="@style/h1"
             android:layout_marginTop="@dimen/medio"
@@ -54,7 +54,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Categoria"
+            android:hint="Digite a categoria do artesanato"
             android:id="@+id/formulario_categoria"
             android:layout_marginLeft="@dimen/medio"
             android:layout_marginRight="@dimen/medio"/>
@@ -71,7 +71,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Produzido por"
+            android:hint="Digite o nome de quem produziu o artesanato"
             android:id="@+id/formulario_autor"
             android:layout_marginLeft="@dimen/medio"
             android:layout_marginRight="@dimen/medio"/>
@@ -88,18 +88,10 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Preço para venda"
+            android:hint="Digite o valor de venda do artesanato"
             android:id="@+id/formulario_price"
             android:layout_marginLeft="@dimen/medio"
             android:layout_marginRight="@dimen/medio"/>
-
-        <ImageView
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            android:layout_marginTop="@dimen/medio"
-            android:background="@drawable/rectangle_destaque"
-            android:layout_marginLeft="@dimen/medio"
-            android:id="@+id/imageProduto"/>
 
         <Button
             android:layout_width="match_parent"
@@ -110,6 +102,16 @@
             android:layout_marginRight="@dimen/medio"
             android:layout_marginTop="@dimen/medio"
             style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="@dimen/medio"
+            android:background="@drawable/rectangle_destaque"
+            android:layout_marginLeft="@dimen/medio"
+            android:id="@+id/imageProduto"/>
+
+
 
     </LinearLayout>
 
