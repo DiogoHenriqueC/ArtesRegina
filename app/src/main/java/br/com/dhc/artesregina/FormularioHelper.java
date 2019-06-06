@@ -52,7 +52,9 @@ public class FormularioHelper {
     }
 
 
-
+    public void setImagem(byte[] bb){
+        produto.setImagem(bb);
+    }
 
 
 

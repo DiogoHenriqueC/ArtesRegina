@@ -11,6 +11,8 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.List;
 
 import br.com.dhc.artesregina.R;
@@ -67,6 +69,9 @@ public class CarrosselAdapter extends RecyclerView.Adapter<CarrosselAdapter.View
         Produto produto = produtos.get(position);
         holder.titulo.setText(produto.getNome());
         holder.autor.setText(produto.getAutor());
+        if(produto.getImagem() != null){
+            Glide.with(holder.itemView).load(produto.getImagem()).centerCrop().into(holder.imagem);
+        }
         holder.itemView.setTag(produto);
     }
 

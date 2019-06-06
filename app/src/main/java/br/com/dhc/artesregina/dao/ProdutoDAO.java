@@ -14,14 +14,14 @@ import br.com.dhc.artesregina.modelo.Produto;
 
 public class ProdutoDAO extends SQLiteOpenHelper {
     public ProdutoDAO(Context context) {
-        super(context, "MostrArt", null, 1);
+        super(context, "MostrArt", null, 2);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
 
         //QUERY ON CREATE
-        String sql = "CREATE TABLE Produtos (id INTEGER PRIMARY KEY, nome TEXT NOT NULL, descricao TEXT, categoria TEXT, autor TEXT, price REAL);";
+        String sql = "CREATE TABLE Produtos (id INTEGER PRIMARY KEY, nome TEXT NOT NULL, descricao TEXT, categoria TEXT, autor TEXT, price REAL, imagem VARBINARY );";
         db.execSQL(sql);
 
     }
@@ -52,7 +52,7 @@ public class ProdutoDAO extends SQLiteOpenHelper {
         dados.put("categoria", produto.getCategoria());
         dados.put("autor", produto.getAutor());
         dados.put("price", produto.getPrice());
-        //dados.put("imagem", produto.getImagem());
+        dados.put("imagem", produto.getImagem());
         return dados;
     }
 
@@ -77,6 +77,7 @@ public class ProdutoDAO extends SQLiteOpenHelper {
             produto.setCategoria(c.getString(c.getColumnIndex("categoria")));
             produto.setAutor(c.getString(c.getColumnIndex("autor")));
             produto.setPrice(c.getString(c.getColumnIndex("price")));
+            produto.setImagem(c.getBlob(c.getColumnIndex("imagem")));
 
             produtos.add(produto);
 

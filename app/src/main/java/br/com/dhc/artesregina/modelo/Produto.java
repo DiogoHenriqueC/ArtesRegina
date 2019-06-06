@@ -12,11 +12,18 @@ public class Produto implements Serializable {
     private String categoria;
     private String autor;
     private String price;
-    private Image imagem;
 
-    public Image getImagem() { return imagem; }
+    public byte[] getImagem() {
+        return imagem;
+    }
 
-    public void setImagem(Image imagem) { this.imagem = imagem; }
+    public void setImagem(byte[] imagem) {
+        this.imagem = imagem;
+    }
+
+    private byte[] imagem;
+
+
 
     public Long getId() {
         return id;

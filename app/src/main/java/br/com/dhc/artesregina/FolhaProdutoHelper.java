@@ -1,6 +1,9 @@
 package br.com.dhc.artesregina;
 
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import br.com.dhc.artesregina.modelo.Produto;
 
@@ -11,6 +14,7 @@ public class FolhaProdutoHelper {
     private TextView categoria;
     private TextView autor;
     private TextView price;
+    private ImageView imagem;
 
     private Produto produto;
 
@@ -21,6 +25,7 @@ public class FolhaProdutoHelper {
         categoria = (TextView) activity.findViewById(R.id.categoria);
         autor = (TextView) activity.findViewById(R.id.autor);
         price = (TextView) activity.findViewById(R.id.price);
+        imagem = (ImageView) activity.findViewById(R.id.imageProduto);
 
         produto = new Produto();
 
@@ -49,6 +54,8 @@ public class FolhaProdutoHelper {
         this.produto = produto;
 
     }
+
+
 
 
 
