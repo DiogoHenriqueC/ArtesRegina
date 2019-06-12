@@ -61,7 +61,6 @@ public class CarrosselAdapter extends RecyclerView.Adapter<CarrosselAdapter.View
 
         ConstraintLayout padrao = (ConstraintLayout) LayoutInflater.from(parent.getContext()).inflate(R.layout.carrossel_item, parent, false);
         return new ViewHolder(padrao);
-
     }
 
     @Override

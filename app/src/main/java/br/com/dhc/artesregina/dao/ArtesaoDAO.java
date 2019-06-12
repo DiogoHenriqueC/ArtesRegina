@@ -37,6 +37,5 @@ public class ArtesaoDAO extends SQLiteOpenHelper {
         dados.put("email", artesao.getEmail());
 
         db.insert("Artesao", null, dados);
-
     }
 }

@@ -92,18 +92,15 @@ public class VitrineActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.meus_produtos) {
 
-            Toast.makeText(VitrineActivity.this, "Meus Produtos", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(VitrineActivity.this, "Meus Produtos", Toast.LENGTH_SHORT).show();
 
             Intent intentVaiProFormulario = new Intent(VitrineActivity.this, ListaProdutosActivity.class);
             startActivity(intentVaiProFormulario);
 
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
-
-
 
     private void carregaLista() {
 
@@ -122,12 +119,11 @@ public class VitrineActivity extends AppCompatActivity {
                 intentVaiProProduto.putExtra("produto", produto.getId());
                 startActivity(intentVaiProProduto);
 
-                Toast.makeText(VitrineActivity.this, produto.getNome(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(VitrineActivity.this, produto.getNome(), Toast.LENGTH_SHORT).show();
             }
         });
 
         carrosselDestaque.setAdapter(adapter);
-
     }
 
 
@@ -146,14 +142,10 @@ public class VitrineActivity extends AppCompatActivity {
                 intentVaiProProduto.putExtra("produto", prod.getId());
                 startActivity(intentVaiProProduto);
 
-                Toast.makeText(VitrineActivity.this, prod.getNome(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(VitrineActivity.this, prod.getNome(), Toast.LENGTH_SHORT).show();
             }
         });
 
         carrosselPadrao.setAdapter(adapterPadrao);
     }
-
-
-
-
 }

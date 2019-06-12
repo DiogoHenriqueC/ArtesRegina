@@ -75,7 +75,7 @@ public class Produto implements Serializable {
 
     @Override
     public String toString() {
-        return getId() + " - " + getNome() + " \n " + getAutor() + " - " + getPrice() + " \n " + getDescricao();
+        return getNome() + " - " + getPrice() + "\n" + getAutor();
     }
 
 }

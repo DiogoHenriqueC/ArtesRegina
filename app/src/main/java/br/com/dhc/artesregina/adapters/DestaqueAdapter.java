@@ -76,13 +76,11 @@ public class DestaqueAdapter extends RecyclerView.Adapter<DestaqueAdapter.ViewHo
             Glide.with(holder.itemView).load(produto.getImagem()).centerCrop().into(holder.imagem);
         }
         holder.itemView.setTag(produto);
-
     }
 
     @Override
     public int getItemCount() {
         return produtos.size();
     }
-
 
 }

@@ -37,7 +37,7 @@ public class ListaProdutosActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Produto produto = (Produto) listaProdutos.getItemAtPosition(position);
-                Toast.makeText(ListaProdutosActivity.this, "Aluno " + produto.getNome() + " clicado", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(ListaProdutosActivity.this, "Aluno " + produto.getNome() + " clicado", Toast.LENGTH_SHORT).show();
 
                 Intent intentVaiProFormulario = new Intent(ListaProdutosActivity.this, FormularioActivity.class);
                 intentVaiProFormulario.putExtra("produto", produto);

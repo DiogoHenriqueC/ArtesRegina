@@ -48,15 +48,9 @@ public class FormularioHelper {
         campoPrice.setText(produto.getPrice());
 
         this.produto = produto;
-
     }
-
 
     public void setImagem(byte[] bb){
         produto.setImagem(bb);
     }
-
-
-
-
 }

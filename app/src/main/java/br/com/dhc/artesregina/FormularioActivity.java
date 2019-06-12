@@ -61,6 +61,7 @@ public class FormularioActivity extends AppCompatActivity {
 
     }
 
+    // Selecionar imagem da galeria
     private void pickFromGallery(){
         //Create an Intent with action as ACTION_PICK
         Intent intent=new Intent(Intent.ACTION_PICK);
@@ -73,6 +74,8 @@ public class FormularioActivity extends AppCompatActivity {
         startActivityForResult(intent, IMAGE_GALLERY_REQUEST);
     }
 
+
+    // Direcionar imagem selecionada na galeria
     public void onActivityResult(int requestCode,int resultCode,Intent data){
         // Result code is RESULT_OK only if the user selects an Image
         if (resultCode == Activity.RESULT_OK)
@@ -87,6 +90,8 @@ public class FormularioActivity extends AppCompatActivity {
             }
     }
 
+
+    // Converte imagens para Byte
     public byte[] convertImageToByte(Uri uri){
         byte[] data = null;
         try {
@@ -130,7 +135,7 @@ public class FormularioActivity extends AppCompatActivity {
                 }
                 dao.close();
 
-                Toast.makeText(FormularioActivity.this, "Produto salvo!", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(FormularioActivity.this, "Produto salvo!", Toast.LENGTH_SHORT).show();
 
                 finish();
                 break;

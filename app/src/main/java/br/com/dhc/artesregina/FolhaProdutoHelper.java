@@ -18,7 +18,6 @@ public class FolhaProdutoHelper {
 
     private Produto produto;
 
-
     public FolhaProdutoHelper(FolhaProdutoActivity activity){
         nome = (TextView) activity.findViewById(R.id.artesanato);
         descricao = (TextView) activity.findViewById(R.id.descricao);
@@ -40,7 +39,6 @@ public class FolhaProdutoHelper {
         produto.setPrice(price.getText().toString());
 
         return produto;
-
     }
 
     public void preencheFolhaProduto(Produto produto) {
@@ -52,15 +50,5 @@ public class FolhaProdutoHelper {
         price.setText(produto.getPrice());
 
         this.produto = produto;
-
     }
-
-
-
-
-
-
-
-
-
 }

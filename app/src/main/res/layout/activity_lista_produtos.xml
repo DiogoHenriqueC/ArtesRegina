@@ -7,19 +7,9 @@
     tools:context="br.com.dhc.artesregina.ListaProdutosActivity"
     >
 
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="TextView"/>
-
-
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/lista_produtos" />
-
 
 </android.support.constraint.ConstraintLayout>
